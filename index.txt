@@ -1,0 +1,45 @@
+Title: Minimum Flips to Avoid Three Consecutive Identical Characters
+
+You are given a string s consisting only of the characters 'a' and 'b'.
+In one operation, you may flip a single character: change 'a' → 'b' or 'b' → 'a'.
+
+Task
+Find the minimum number of operations required so that the final string does NOT
+contain three consecutive identical characters (i.e., no substring "aaa" or "bbb").
+
+Input
+- A single line containing the string s (1 ≤ |s| ≤ 2 * 10^5), s[i] ∈ {'a','b'}.
+
+Output
+- A single integer: the minimum number of flips.
+
+Hint
+Let the string be decomposed into runs of equal characters with lengths L1, L2, ….
+The answer is:  sum over all runs of floor(Li / 3).
+
+Examples
+1)
+Input
+aaabbb
+Output
+2
+Explanation
+Runs have lengths 3 and 3 → floor(3/3)+floor(3/3)=2. One optimal result: "aabab b".
+
+2)
+Input
+abba
+Output
+0
+Explanation
+There is no "aaa" or "bbb" already.
+
+3)
+Input
+aaaa
+Output
+1
+Explanation
+Run length 4 → floor(4/3)=1; flip one character to break into ≤2-length segments.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
