@@ -43,3 +43,40 @@ Explanation
 Run length 4 → floor(4/3)=1; flip one character to break into ≤2-length segments.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem — Smallest Anagram Period
+
+You are given a string input_str of lowercase English letters.
+
+Definition:
+input_str is said to be formed from a base string s if input_str can be partitioned into consecutive substrings s1, s2, …, sm such that:
+• Every full substring (s1, s2, …, s_{m-1}) is a perfect anagram of s (same letter counts).
+• The last substring sm may be a partial of s: |sm| ≤ |s| and, for each letter c, count_sm(c) ≤ count_s(c).
+
+Task:
+Find the length L = |s| of the smallest possible base string s that can generate input_str in this way.
+
+Input Format:
+• One line containing input_str.
+
+Output Format:
+• A single integer: the smallest valid L.
+
+Constraints:
+• 1 ≤ |input_str| ≤ 1e5
+• input_str consists only of 'a'–'z'
+
+Example 1
+Input
+abcbcacba
+Output
+3
+
+Example 2
+Input
+bbaaabababaabb
+Output
+4
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
