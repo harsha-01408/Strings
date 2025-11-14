@@ -80,3 +80,30 @@ Output
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+String Operation XOR
+
+You are given an integer n and a binary string s of length n (consisting only of characters '0' and '1').
+
+In one move, you may choose two adjacent characters s[i] and s[i+1] and replace BOTH of them according to the following rule:
+
+00 -> 00
+11 -> 00
+01 -> 11
+10 -> 11
+
+(That is, you compute the XOR of the two bits and write that result in both positions.)
+
+Your goal is to make the entire string consist only of '0' characters.
+
+Return the minimum number of moves required to transform s into a string of all '0'.
+
+If it is impossible to make all characters '0', return -1.
+
+Example:
+n = 7
+s = "1101110"
+Output: 4
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
