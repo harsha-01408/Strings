@@ -107,3 +107,45 @@ Output: 4
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Smaller Than Reverse – findMinimumOperations
+
+You are given a string s consisting of lowercase English letters.
+
+Define:
+  rev = reverse(s)   (the string s reversed)
+
+Your goal:
+You want to transform s (by swapping characters) so that:
+  s is lexicographically smaller than rev
+i.e., s < rev in dictionary order.
+
+Operation allowed:
+In one operation, you may choose any two indices i and j (0 ≤ i, j < |s|) and swap the characters s[i] and s[j].
+
+You may perform this operation any number of times.
+
+Task:
+Return the minimum number of such swaps needed so that in the final string s, the condition
+  s < reverse(s)
+holds.
+
+If it is impossible to make s lexicographically smaller than its reverse (for example, s = "aaa", where every permutation equals its reverse), return -1.
+
+Examples:
+
+Example 1:
+Input:
+s = "psnab"
+Output:
+1
+
+Example 2:
+Input:
+s = "aaa"
+Output:
+-1
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
