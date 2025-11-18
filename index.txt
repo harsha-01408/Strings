@@ -149,3 +149,48 @@ Output:
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Description
+Cow Bessie is learning string operations. She constructs new strings step by step using the following rules:
+
+S(0) = "moo"
+
+S(1) = S(0) + "m" + "ooo" + S(0)
+     = "moo" + "m" + "ooo" + "moo"
+     = "moomooomoo"
+
+S(2) = S(1) + "m" + "oooo" + S(1)
+     = "moomooomoo" + "m" + "oooo" + "moomooomoo"
+     = "moomooomoomoooomoomooomoo"
+
+…
+
+Bessie keeps generating strings in this way, until the length of the latest string is at least the given integer N.
+
+From the construction above, we can see that the k-th string is formed by:
+S(k) = S(k−1) + "m" + (k+2 copies of 'o') + S(k−1)
+
+Now, given an integer N (1 ≤ N ≤ 10^9), determine whether the N-th character (1-indexed) of this final string is the letter 'm' or 'o'.
+
+Input Format
+A single integer N.
+
+Output Format
+A single character: either 'm' or 'o'.
+
+Sample Input
+11
+
+Sample Output
+m
+
+Explanation:
+S(0) = "moo" has length 3, so it’s too short for position 11.
+S(1) has length 10, still too short.
+S(2) has length 25, which is enough. The 11th character of S(2) is 'm', so the answer is 'm'.
+
+Constraints
+1 ≤ N ≤ 10^9
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
