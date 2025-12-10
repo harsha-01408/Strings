@@ -194,3 +194,49 @@ Constraints
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+String Compression with Frequency Limit
+
+You are given a string s consisting of lowercase English letters and an integer k (k >= 2).
+
+You repeatedly perform the following operation on the string:
+
+    - If there exists a group of exactly k equal and adjacent characters,
+      remove all k characters from the string.
+
+After a removal, the string closes up, and new groups of k equal adjacent
+characters may form. You must keep applying this operation as long as
+it is possible.
+
+Return the final string after all possible removals have been performed.
+
+--------------------------------------------------
+Examples:
+
+1) s = "abbcccb", k = 3
+
+   - "abbcccb"
+     Here "ccc" is a group of 3 equal adjacent characters → remove it:
+       "abbcccb" → "abbb"
+   - Now in "abbb", we have "bbb" as a group of 3 equal adjacent characters → remove it:
+       "abbb" → "a"
+   - No more groups of size 3 exist.
+
+   Output: "a"
+
+
+2) s = "aba", k = 2
+
+   - "aba"
+     There is no group of 2 equal adjacent characters.
+     So the string remains unchanged.
+
+   Output: "aba"
+
+--------------------------------------------------
+Goal:
+
+Implement a function that, given s and k, returns the resulting string
+after repeatedly removing all possible groups of k equal adjacent characters.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
