@@ -240,3 +240,35 @@ Implement a function that, given s and k, returns the resulting string
 after repeatedly removing all possible groups of k equal adjacent characters.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem: Minimum Disjoint Segments After Removing One Character
+
+You are given a string s consisting of lowercase English letters.
+
+You must perform the following operation exactly once:
+- Choose any lowercase English character ch, and remove ALL occurrences of ch from s.
+  (If ch does not appear in s, the string remains unchanged.)
+
+After the removal, partition the resulting string into the minimum number of non-empty,
+pairwise disjoint contiguous segments such that in each segment, no character repeats
+(i.e., every segment contains only distinct characters).
+
+Return the minimum possible number of segments over all choices of ch.
+
+Notes:
+- Segments must be contiguous substrings that together cover the entire resulting string.
+- Each segment must be non-empty.
+- If the resulting string becomes empty, the answer is 0.
+
+Example:
+Input:  s = "abac"
+Remove 'a' -> "bc"  -> 1 segment ("bc")
+Remove 'b' -> "aac" -> 2 segments ("a", "ac")
+Answer: 1
+
+Constraints:
+- 1 <= |s| <= 2 * 10^5
+- s contains only 'a' to 'z'
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
