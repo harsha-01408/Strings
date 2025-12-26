@@ -286,3 +286,32 @@ For each test case, determine the minimum possible length of the string after pe
 Print that minimum length.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Almost Matching Substrings
+
+Given a string s (lowercase English letters) and an integer k (0-based index),
+count the number of ordered pairs of substrings (A, B) of s such that:
+
+1) A and B have the same length L, and L > k
+2) For every position x in [0, L-1] where x != k:  A[x] = B[x]
+3) At position k:  A[k] != B[k]
+
+Two substrings are identified by their start and end indices (so substrings taken
+from different positions are considered different even if their contents are equal).
+
+Return the total number of such ordered pairs (A, B).
+
+Input Format (custom testing)
+- First line: string s
+- Second line: integer k
+
+Output Format
+- Print a single integer: the number of ordered pairs of almost-matching substrings.
+
+Constraints
+- 1 <= |s| <= 200
+- 0 <= k < |s|
+- s contains only 'a' to 'z'
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
