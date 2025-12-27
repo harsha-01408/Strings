@@ -315,3 +315,13 @@ Constraints
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+A student compresses big words by removing groups of consecutive equal characters.
+An operation consists of choosing a group of k consecutive equal characters and
+removing them. The student performs this operation as long as possible.
+
+Given a string word (lowercase English letters) and an integer k, determine the
+final word after all possible operations are performed.
+
+Return the final word (it is guaranteed to be unique and non-empty).
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
