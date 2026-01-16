@@ -325,3 +325,19 @@ final word after all possible operations are performed.
 Return the final word (it is guaranteed to be unique and non-empty).
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given two integers N and K, and a string S of length N.
+
+The string S is guaranteed to be valid (beautiful). A string is called
+beautiful if:
+- Every character is chosen from the first K lowercase English letters.
+- The string contains no palindromic substring of length 2 or more.
+
+Your task is to find the lexicographically smallest string of length N
+that is:
+- strictly greater than S in lexicographical order, and
+- still beautiful.
+
+If no such string exists, output -1.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
